@@ -46,8 +46,8 @@
   <div class="login-container">
     <h2>INATRO,IP - Login</h2>
     <form id="loginForm">
-      <input type="text" id="username" placeholder="SATACA038" required /><br />
-      <input type="Data de nascimento" id="password" placeholder="13.03.1997" required /><br />
+      <input type="text" id="username" placeholder="Username" required /><br />
+      <input type="Data de nascimento" id="password" placeholder="Data de nascimento" required /><br />
       <button type="submit">Entrar</button>
     </form>
     <div class="error" id="errorMsg"></div>
@@ -58,7 +58,7 @@
       e.preventDefault();
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
-      if (username === "Abudo Abudo" && password === "20.06.1994") {
+      if (username === "SATACA038" && password === "13.03.1997") {
         window.location.href = "formulario.html";
       } else {
         document.getElementById("errorMsg").textContent = "Credenciais inválidas.";
